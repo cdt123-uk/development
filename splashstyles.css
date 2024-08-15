@@ -3,29 +3,40 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #f4f4f4;
 }
 
 .splash-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
     text-align: center;
-    padding: 20px;
+    overflow: hidden;
 }
 
 .logo-container {
-    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .logo {
-    max-width: 300px;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
 }
 
 .button-container {
-    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
 }
 
 .btn {
@@ -45,7 +56,22 @@ body, html {
 }
 
 footer {
-    margin-top: 50px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
     font-size: 14px;
-    color: #777;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px 0;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+footer p {
+    margin: 0;
 }
