@@ -11,7 +11,7 @@ body {
 
 /* Center header */
 header {
-    background-color: #4CAF50;
+    background-color: #FF6F61;
     color: white;
     padding: 20px;
     text-align: center;
@@ -60,9 +60,9 @@ main {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: rgba(50, 50, 70, 0.7); /* Frosted effect */
-    backdrop-filter: blur(15px); /* Optional blur for the frosted effect */
-    color: #333;
+    background: rgba(50, 50, 70, 0.9); /* Frosted effect */
+    backdrop-filter: blur(25px); /* Optional blur for the frosted effect */
+    color: #FF6F61;
     font-size: 1.5em;
     padding: 10px;
     text-align: center;
