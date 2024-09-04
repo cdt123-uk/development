@@ -26,7 +26,7 @@ main {
 /* Tile container for grid layout */
 .tile-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     justify-items: center;
     justify-content: center; /* Centralize tiles */
@@ -37,8 +37,8 @@ main {
 /* Tile styling */
 .tile {
     position: relative;
-    width: 250px; /* Fixed width for consistency */
-    height: 250px; /* Fixed height for consistency */
+    width: 200px; /* Fixed width for consistency */
+    height: 200px; /* Fixed height for consistency */
     border-radius: 15px;
     overflow: hidden;
     background-color: #1b1b4d; /* Background in case no image */
@@ -60,10 +60,10 @@ main {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.7); /* Frosted effect */
-    backdrop-filter: blur(10px); /* Optional blur for the frosted effect */
+    background: rgba(50, 50, 70, 0.7); /* Frosted effect */
+    backdrop-filter: blur(15px); /* Optional blur for the frosted effect */
     color: #333;
-    font-size: 1.2em;
+    font-size: 1.5em;
     padding: 10px;
     text-align: center;
     margin: 0;
